@@ -1,0 +1,47 @@
+<div class="support" fxFlex fxLayout="row">
+  <div fxFlex="25"></div>
+  <div fxFlex="50">
+    <section>
+      <h3 class="section-h3">Чем мы можем вам помочь?</h3>
+      <div class="section-search">
+        <div fxFlex="60px" fxLayoutAlign="center center">
+          <div class="icon-search">
+            <img src="assets/images/main/support/loupe.svg" alt="search">
+          </div>
+        </div>
+        <div fxFlex fxLayoutAlign="start center">
+          <input type="text" class="input-search" placeholder="Ключевые слова запроса">
+        </div>
+
+      </div>
+
+    </section>
+
+    <section>
+      <h3 class="section-h3">Вопросы по темам</h3>
+      <div fxLayoutAlign="space-between start" fxFill class="themes-container" fxLayout="row wrap">
+        <div class="section-themes" *ngFor="let theme of themes">
+          <div fxFlex="18"></div>
+          <div fxFlex="65" fxLayoutAlign="start center">
+            {{ theme.description }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="section-h3">Нет ответа на ваш вопрос?</h3>
+      <div class="section-question">
+        <div fxFlex="70px" fxLayoutAlign="center center">
+          <div class="add-question">
+            <img src="assets/images/main/support/plus.svg" alt="add">
+          </div>
+        </div>
+        <div fxFlex fxLayoutAlign="start center">
+          Задать вопрос
+        </div>
+      </div>
+    </section>
+  </div>
+  <div fxFlex="25"></div>
+</div>

@@ -1,0 +1,34 @@
+<mat-toolbar class="header">
+  <div fxFlex fxLayoutAlign="flex-start">
+    <a routerLink="/started" class="logo">Booking house</a>
+  </div>
+
+  <div fxFlex fxLayoutAlign="center">
+    <ul
+      class="header-navigation"
+      fxLayoutGap.md="20px"
+      fxLayoutGap.lg="30px"
+      fxLayoutGap.xl="50px"
+      fxHide.xs
+      fxHide.sm
+    >
+      <li><a routerLink="/started" routerLinkActive="active">Поиск жилья</a></li>
+      <li><a routerLink="/bookmarks" routerLinkActive="active">Закладки</a></li>
+      <li><a routerLink="/owners" routerLinkActive="active">Собственникам</a></li>
+      <li><a routerLink="/partners" routerLinkActive="active">Сотрудничество</a></li>
+      <li><a routerLink="/support" routerLinkActive="active">Поддержка</a></li>
+    </ul>
+  </div>
+  <div fxFlex fxLayoutAlign="flex-end">
+    <ul class="header-auth"
+        fxLayoutGap.md="10px"
+        fxLayoutGap.lg="15px"
+        fxLayoutGap.xl="20px"
+        fxHide.xs
+        fxHide.sm
+    >
+      <li><a routerLink="/auth/login" routerLinkActive="active">Войти</a></li>
+      <li><a routerLink="/auth/signup" routerLinkActive="active">Зарегистрироваться</a></li>
+    </ul>
+  </div>
+</mat-toolbar>

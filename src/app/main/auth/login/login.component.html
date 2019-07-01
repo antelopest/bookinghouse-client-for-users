@@ -1,0 +1,77 @@
+<div fxFlex class="login">
+  <div fxFlex fxLayout="row">
+    <div fxFlex="20"></div>
+    <div fxFlex="60">
+      <div fxFlex fxLayout="row" class="login-container">
+        <div fxFlex="40">
+          <div fxFlex fxLayoutAlign="center start" fxLayout="column">
+            <div class="left-container">
+              <h3>Войти в учетную запись</h3>
+              <p>Войдите с помощью сторонних сервисов</p>
+              <div class="social">
+                <a>
+                  <img class="social-google" src="assets/images/main/auth/social/search.svg" alt="google">
+                </a>
+                <a>
+                  <img class="social-vk" src="assets/images/main/auth/social/vk.svg" alt="vk">
+                </a>
+                <a>
+                  <img class="social-facebook" src="assets/images/main/auth/social/facebook.svg" alt="facebook">
+                </a>
+              </div>
+              <p>или</p>
+
+              <mat-form-field
+                class="login-input"
+                appearance="outline"
+                floatLabel="always"
+              >
+                <input
+                  matInput
+                  required
+                  type="email"
+                  placeholder="Электронная почта"
+                  class="login-input-email"
+                  autocomplete="new-password"
+                >
+              </mat-form-field>
+
+              <mat-form-field
+                class="login-input"
+                appearance="outline"
+                floatLabel="never"
+              >
+                <input
+                  matInput
+                  required
+                  type="password"
+                  placeholder="Пароль"
+                  class="login-input-password"
+                >
+              </mat-form-field>
+              <button mat-button class="btn-login">Войти</button>
+            </div>
+          </div>
+        </div>
+        <div fxFlex="60" class="login-right-content">
+          <div class="right-container">
+            <div class="description-top">
+              <div class="login-logo">Booking house</div>
+              <div class="login-description">Ваш сервис по поиску жилья</div>
+            </div>
+            <div class="description-bottom">
+              <div class="login-description">
+                Арендуйте, выкладывайте предложения, <br>
+                оставляйте отзывы, принимайте гостей<br>
+                вместе с нашим сервисом.
+              </div>
+              <div class="login-description-signup">У вас нет учетной записи?</div>
+              <a routerLink="/auth/signup" class="btn-signup">Зарегистрироваться</a>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+    <div fxFlex="20"></div>
+  </div>
+</div>

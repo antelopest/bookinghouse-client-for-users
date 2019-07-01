@@ -1,0 +1,109 @@
+<div fxFlex class="signup">
+  <div fxFlex fxLayout="row">
+    <div fxFlex="20"></div>
+    <div fxFlex="60">
+      <div fxFlex fxLayout="row" class="signup-container">
+        <div fxFlex="40">
+          <div fxFlex fxLayoutAlign="center start" fxLayout="column">
+            <div fxFlex fxLayoutAlign="center start" fxLayout="column">
+              <div class="left-container">
+                <h3>Создание учетной записи</h3>
+                <p>Войдите с помощью сторонних сервисов</p>
+                <div class="social">
+                  <a>
+                    <img class="social-google" src="assets/images/main/auth/social/search.svg" alt="google">
+                  </a>
+                  <a>
+                    <img class="social-vk" src="assets/images/main/auth/social/vk.svg" alt="vk">
+                  </a>
+                  <a>
+                    <img class="social-facebook" src="assets/images/main/auth/social/facebook.svg" alt="facebook">
+                  </a>
+                </div>
+                <p>или</p>
+
+                <mat-form-field
+                  class="login-input"
+                  appearance="outline"
+                  floatLabel="always"
+                >
+                  <input
+                    matInput
+                    required
+                    type="email"
+                    placeholder="Электронная почта"
+                    class="my-input"
+                  >
+                </mat-form-field>
+
+                <mat-form-field
+                  class="login-input-surname"
+                  appearance="outline"
+                  floatLabel="always"
+                >
+                  <input
+                    matInput
+                    required
+                    type="text"
+                    placeholder="Фамилия"
+                    class="my-input"
+                  >
+                </mat-form-field>
+
+                <mat-form-field
+                  class="login-input-name"
+                  appearance="outline"
+                  floatLabel="always"
+                >
+                  <input
+                    matInput
+                    required
+                    type="text"
+                    placeholder="Имя"
+                    class="my-input"
+                  >
+                </mat-form-field>
+
+
+
+
+                <mat-form-field
+                  class="login-input"
+                  appearance="outline"
+                  floatLabel="never"
+                >
+                  <input
+                    matInput
+                    required
+                    type="password"
+                    placeholder="Придумайте пароль"
+                    class="my-input login-input-password"
+                  >
+                </mat-form-field>
+                <button mat-button class="b-signup">Создать учетную запись</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div fxFlex="60" class="signup-right-content">
+          <div class="container">
+            <div class="description-top">
+              <div class="signup-logo">Booking house</div>
+              <div class="signup-description">Ваш сервис по поиску жилья</div>
+            </div>
+            <div class="description-bottom">
+              <div class="signup-description">
+                Арендуйте, выкладывайте предложения, <br>
+                оставляйте отзывы, принимайте гостей<br>
+                вместе с нашим сервисом.
+              </div>
+              <div class="signup-description-login description-top">У вас есть учетная запись?</div>
+              <a routerLink="/auth/login" class="btn-login">Войти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div fxFlex="20"></div>
+  </div>
+</div>
