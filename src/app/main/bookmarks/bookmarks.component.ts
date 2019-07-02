@@ -1,5 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
+const Bookmarks : { description: string }[] = [
+  {
+    description: 'Добавлено 1 предложение',
+  },
+]
+
+
+
+
+
+
+
 @Component({
   selector: 'app-bookmarks',
   templateUrl: './bookmarks.component.html',

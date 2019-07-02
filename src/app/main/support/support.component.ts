@@ -31,8 +31,6 @@ const Themes: { description: string }[] = [
   }
 ];
 
-
-
 @Component({
   selector: 'app-support',
   templateUrl: './support.component.html',
